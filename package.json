@@ -1,7 +1,7 @@
 {
   "name": "mongo-bank",
   "version": "0.0.1",
-  "description": "",
+  "description": "nestjs app connected to a free M0 mongo cluster for a university project about NOSQL data bases.",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
