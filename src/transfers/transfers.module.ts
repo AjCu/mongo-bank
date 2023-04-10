@@ -10,7 +10,7 @@ import { Transfer, TransferSchema } from './schemas/transfer.schema';
       { name: Transfer.name, schema: TransferSchema },
     ]),
   ],
-  providers: [TransfersService],
   controllers: [TransfersController],
+  providers: [TransfersService],
 })
 export class TransfersModule {}

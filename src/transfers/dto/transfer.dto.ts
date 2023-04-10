@@ -1,5 +1,7 @@
-export class UserDto {
-  name: string;
-  money: number;
+export class TransferDto {
   type: string;
+  date: Date;
+  moneyMoved: number;
+  userFrom: string;
+  userTo: string;
 }
