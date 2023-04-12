@@ -21,4 +21,14 @@ export class UserService {
     const createdUser = new this.userModule(UserDto);
     return await createdUser.save();
   }
+  async updateUser(id: string, UserDto: UserDto) {
+    const updatedUser = await this.userModule.findByIdAndUpdate(id, UserDto, {
+      new: true,
+    });
+    return updatedUser;
+  }
+  async deleteUser(id: string) {
+    const deletedUser = await this.userModule.findByIdAndDelete(id);
+    return deletedUser;
+  }
 }

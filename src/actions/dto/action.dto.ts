@@ -1,6 +1,4 @@
-export class TransferDto {
-  type: string;
-  date: Date;
+export class ActionDto {
   moneyMoved: number;
   userFrom: string;
   userTo: string | null;
